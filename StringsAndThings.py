@@ -42,3 +42,16 @@ print(name[-2])
 
 for i in range(len(name)):
     print(name[i])
+
+# slicing and Dicing
+#   Slicing Operator:  :
+#   slicing lets us make substrings
+
+print(name[0:5])
+print(name[0:6])
+print(name[:5])
+print(name[6:9])
+print(name[6:])
+
+for i in range(1, len(name+1)):
+    print(name[0:i])
