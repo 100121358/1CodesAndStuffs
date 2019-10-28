@@ -17,3 +17,5 @@ def letterToIndex(letter):
         else:
             letter + alphabet[idx]
             return letter
+
+print(letterToIndex('P'))
