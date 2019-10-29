@@ -66,3 +66,11 @@ if "y" in name:
     print("The letter y is in name")
 else:
     print("the letter y in not in name")
+
+
+
+
+print(scrambl2Encrypt("GOOD MORNING LADIES AND GENTLEMEN"))
+
+print(scramble2Decrypt("ODMRIGLDE N ETEEGO ONN AISADGNLMN"))
+
