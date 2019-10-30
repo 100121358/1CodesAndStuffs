@@ -28,7 +28,7 @@ def scramble2Decrypt(cipherText):
         plainText = plainText + evenChars[i]
         plainText = plainText + oddChars[i]
 
-        if len(oddChars0) < len(evenChars):
+        if len(oddChars) < len(evenChars):
             plainText = plainText + evenChars[-1]
 
             return plainText
@@ -37,7 +37,31 @@ def encryptMessage():
     msg = input("Enter the message to encrypt: ")
     cipherText = scrambled2Encrypt()
 
-# Write a stripspaces(text) function here
+# Write a stripSpaces(text) function here
+print("Climb_the_eastern_wall")
 
 # Write a caesarEncrypt(plaintext, shift)
 # write a caesarDecrypt(cipherText, shift)
+
+def caesarEncrypt(plainText):
+    evenChars = ""
+    oddChars = ""
+    charCount = 0
+    for ch in plainText:
+        if charCount % 2 == 0:
+            evenChars = evenChars + ch
+        else:
+            oddChars = oddChars + ch
+            charCount = charCount + 1
+            cipherText = oddChars + evenChars
+            return caesarEncrypt()
+
+def caesarDecrypt(plainText):
+    halfLength = len(caesarText) // 2
+    evenChars = caesarText()[halfLength:]
+    oddChars = caesarDecrypt()[:halfLength]
+    plaintext = ""
+
+
+print("Climb the Eastern Wall and silently dispose of the guards")
+
