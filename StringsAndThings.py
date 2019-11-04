@@ -56,6 +56,9 @@ print(name[6:])
 for i in range(1, len(name) + 1):
     print(name[0:i])
 
+# Making a change for the better
+
+
 
 # Searching inside of Strings
 
